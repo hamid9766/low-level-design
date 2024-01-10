@@ -66,5 +66,28 @@ public class SharedBuffer {
 
         producerThread.start();
         consumerThread.start();
+
+
+        /*
+            Expected Output
+            Item Produced 0
+            Item Produced 1
+            Item Produced 2
+            Item Produced 3
+            Queue is full waiting for Consumer thread....
+            Item Consumed 0
+            Item Consumed 1
+            Item Consumed 2
+            Item Consumed 3
+            Queue is empty waiting for Producer thread....
+            Item Produced 4
+            Item Produced 5
+            Item Produced 6
+            Item Consumed 4
+            Item Consumed 5
+            Item Consumed 6
+        */
+
+
     }
 }
